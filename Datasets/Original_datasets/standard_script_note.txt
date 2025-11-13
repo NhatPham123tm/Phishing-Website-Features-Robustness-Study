@@ -1,0 +1,16 @@
+# Dataset A → standardized
+python Datasets/Original_datasets/standardize_features.py --input Datasets/Original_datasets/DatasetA.csv --dataset A --mapping Datasets/Mapping/feature_mapping.csv --output Datasets/standardized_A.csv --delimiter ';' --on_bad_lines warn
+
+# Dataset B → standardized
+python standardize_features.py \
+  --input /path/to/datasetB.csv \
+  --dataset B \
+  --mapping /mnt/data/feature_mapping.csv \
+  --output /path/to/standardized_B.csv
+
+# Dataset C → standardized
+python standardize_features.py \
+  --input /path/to/datasetC.csv \
+  --dataset C \
+  --mapping /mnt/data/feature_mapping.csv \
+  --output /path/to/standardized_C.csv
